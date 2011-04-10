@@ -1,0 +1,103 @@
+body{
+	background: #C1D6D2;
+	font-family: georgia;
+}
+
+
+.page{
+	position: absolute;
+	width: 800px;
+	
+	border: solid #9b8e58;
+	border-width:5px;
+	padding: 10px;
+	border-radius: 20px;
+	
+	margin-left: 185px;
+	
+	background-color: #FFF3CF;
+}
+
+#shoppingininventorydiv{
+	border: solid #9b8e58;
+	border-width: 2px;
+	padding: 10px;
+	border-radius: 10px;
+	
+	background-color: #fff3cf;
+}
+
+.btnAddInv{
+	background-color: #e5dab9;
+}
+.btnRemInv{
+	background-color: #e5dab9;
+}
+.btnRemShop{
+	background-color: #e5dab9;
+}
+
+.subpage{
+	position: absolute;
+	width: 800px;
+	
+	border: solid #9b8e58;
+	border-width:5px;
+	padding: 10px;
+	border-radius: 20px;
+	
+	margin-left: 185px;
+	
+	background-color: #FFF3CF;
+}
+
+#navigation{
+	list-style-type: none;
+	position: fixed;
+	left: -15px;
+	top: 30px;
+	width: 175px;
+	z-index: -1;
+}
+
+.subnav{
+	background-color: #e5dab9;
+}
+
+.return{
+	background-color: #e5dab9;
+}
+
+
+#navigation li{
+	background-color: #FFDD8F;
+	padding: 10px;
+
+}
+
+#page-masterthreadlist{
+}
+
+#page-masterthreadlist table{
+	border: 1px #d9cf9c;
+}
+
+#page-inventorylist{
+	display: none;
+}
+
+#page-shoppinglist{
+	display: none;
+}
+
+#page-about{
+	display: none;
+}
+
+#page-projects{
+	display: none;
+}
+
+#page-projects-addnew{
+	display: none;
+}

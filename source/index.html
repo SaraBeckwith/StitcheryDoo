@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Stitchery Doo!</title>
+	<!-- <script type="text/javascript" src="scripts/dice.js"></script> -->
+	<script type="text/javascript" src="plugins/jquery/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="scripts/stitchery2.js"></script>
+	<script type="text/javascript" src="data/threads.js"></script>
+	
+	<!-- <link rel="stylesheet" href="plugins/jquerymobile/jquery.mobile-1.0a3.min.css" /> -->
+	<link rel="stylesheet" href="styles/core.css" />
+</head>
+<body>
+	
+<ul id="navigation">
+	<li page="page-masterthreadlist">Master Thread List</li>
+	<li page="page-inventorylist">My Inventory</li>
+	<!--<li page="page-projects">Projects</li>-->
+	<li page="page-shoppinglist">Shopping List</li>
+	<li page="page-about">About</li>
+</ul>
+	
+<div id="page-masterthreadlist" class="page">
+	<table id="masterthreadtable" border="1" bordercolor="#d9cf9c">
+	</table>
+</div> <!--page-masterthreadlist-->
+
+<div id="page-inventorylist" class="page">
+	<div>Add threads to your inventory using the form below.  When you run out of a thread, touch the "Remove" button next to each row to remove it from your threadbox!</div>
+	<form type="post" onsubmit="addInventoryItem(); return false;">
+		<input type="text" id="threadKey" name="threadKey" placeholder="#" style="width: 40px;" />
+		<input type="submit" value="Add Thread to My Inventory" />
+	</form>
+	<table id="inventorythreadtable" border="1" bordercolor="#d9cf9c">
+		
+	</table>
+</div> <!--page-inventorylist-->
+
+<div id="page-shoppinglist" class="page">
+	<div>Add threads to your shopping list using the form below. Touch the checkbox as you purchase each one, and use the "Finished Shopping" button to add the purchased threads to your threadbox and remove them from the list!</div>
+	<form type="post" onsubmit="addShoppingListItem(); return false;">
+		<input type="text" id="shopThreadKey" name="shopThreadKey" placeholder="#" style="width: 40px;" />
+		<input type="submit" value="Add Thread to My Shopping List" />
+	</form>
+	<table id="shoppinglisttable" border="1" bordercolor="#d9cf9c">
+	</table>
+	<input type="button" id="btnFinishedShopping" value="Finished Shopping" />
+</div><!--page-shoppinglist-->
+
+
+<!--
+<div id="page-projects" class="page">
+	Projects in Progress
+	<table id="currentprojectlist" border="1">
+	</table>
+	Bookmarked Projects
+	<table id="futureprojectlist" border="1">
+	</table>
+	<br /><br />
+	<div class="subnav" page="page-projects-addnew">Touch here to add a new project</div>
+</div>
+
+<div id="page-projects-addnew" class="subpage">
+	<div class="subnav" page="previous">Back to Project List</div>
+	
+	<p>
+		<input type="text" id="projTitle" name="projTitle" placeholder="New Project Title" style="width: 200px;" /><br>
+		<input type="text" id="projInfo" name="projInfo" placeholder="Project Notes" style="width: 300px" /><br>
+		Thread: <input type="text" id="newProjThread" name="newProjThread" placeholder="#" style="width: 40px" /> 
+		<input type="button" id="tempAddThreadtoProj" value="Add Thread to Project" />
+		<table id="newprojectthreadtable" border="1">
+		</table>
+	</p>
+</div>
+-->
+
+<div id="page-about" class="page">
+	Stitchery Doo is written by Sara Beckwith of Composing Hallelujah(tm).  It's just a simple app to preview colors of DMC embroidery floss, keep a personal inventory and hold a shopping list for projects.<br>
+	<p>Contact:<br>
+		Web: <a href="http://composinghallelujah.com">Composing Hallelujah</a><br>
+		Twitter: <a href="http://twitter.com/composingsara">@composingSara</a>
+	</p>
+	Product names, logos, brands, and other trademarks featured or referred to within Stitchery Doo are the property of their respective holders.  These holders are not affiliated with Stitchery Doo, Composing Hallelujah or Sara Beckwith.  She's just a fan.
+	<p>
+		
+	</p>
+</div>
+
+
+
+
+
+</body>
+</html>

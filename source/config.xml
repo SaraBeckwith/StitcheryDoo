@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.3" rim:header="RIM-Widget:rim/widget">
+  <name>Stitchery Doo!</name>
+  <description>Maintains an inventory of thread colors and provides a shopping list function to organize cross stitching projects</description>
+  <author rim:copyright="2011">Sara Beckwith</author>
+  <icon rim:hover="false" src="icon.png"/>
+  <icon rim:hover="true" src="icon.png"/>
+  <content src="index.html"/>
+</widget>
